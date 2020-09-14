@@ -91,7 +91,7 @@ header {
 }
 
 .header__content {
-    padding: 34px 0px 23px;
+    padding: 26px 0px 20px;
 }
 
 .header__content-inner {
@@ -122,6 +122,52 @@ header {
 #modal {
     display: none;
 }
+
+.block__tabs {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.tabs {
+    position: relative;
+}
+.tabs__nav {
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */ 
+}
+
+.tabs__item {
+    position: relative;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    flex: 1;
+    padding: 6px 60px 3px 16px;
+    margin: 0px 8px 0px 0px;
+}
+
+.tabs__item.active {
+    border-color: #ffc222;
+    background-color: #f9f9f9;
+    box-shadow: 2px 4px 2.3px 4.7px rgba(91, 89, 89, 0.14);    
+}
+
+.tab {
+    background-color: #f9f9f9;
+    display: none;
+    padding: 20px;
+}
+
+.tab.active {
+    max-width: 98%;
+    z-index: 15;
+    position: absolute;
+    display: block;
+    transition: 1s;
+  
+}
+
+
 /* *********************************************main__slider **********************************/
 .slider {
     background-image: url(../img/slider-fon.jpg);
